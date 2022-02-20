@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+
+	<head>
+			<title>HTML Tutorial</title>
+			<meta charset="utf-8">
+			<link rel="stylesheet" href="../css/style.css" type="text/css">
+			<meta name="author" content="Cristhian Velazquez">
+			<style type="text/css">
+				.formu > td {
+					text-align:center;
+				}
+				.form {
+					width: 100%;
+					max-width: 500px;
+					margin: 0 auto;
+					display: flex;
+					justify-content: center;
+				}
+				.form input {
+					width: 90%;
+					height: 30px;				
+			</style>
+	</head>
+	
+	<body>
+	
+	<datalist id="buscador">
+			<option value="HTLM">
+			<option value="CSS">
+			<option value="JavaScript">
+			<option value="Tablas">
+			<option value="Listas">
+			<option value="Formulario">
+	</datalist>
+		<div id="cont">
+			<div id="header">
+			
+				<ul class="nav">
+						<li>
+							<img src="..\imagenes\logo1_1.jpg" usemap="#image-map" width="120" height="60">
+								<map name="image-map">
+									<area coords="0,0,1022,469" shape="rect" href="../index.html">
+								</map>
+						</li>
+						<li><a  id="tutorial" style="cursor:pointer">Tutoriales</a>
+							<ul>
+							<li><a href="../secundarias/HTML.html">HTLM</a></li>
+							<li><a href="../secundarias/CSS.html">CSS</a></li>
+							<li><a href="../secundarias/JavaScript.html">JavaScript</a></li>
+							</ul>
+						</li>
+						<li><a href="../secundarias/Explora_Cursos.html">Explora Cursos</a>
+							<ul>
+							<li><a href="../secundarias/novato.html">Novato</a></li>
+							<li><a href="../secundarias/intermedio.html">Intermedio</a></li>
+							<li><a href="../secundarias/avanzado.html">Avanzado</a></li>
+							</ul>
+						</li>
+						<li>
+							<form action="" method="post" target="_blank">
+								<p style="color:white">Busqueda:
+									<input type="search" name="busqueda" placeholder="listas, HTML, etc" list="buscador">
+									<input type="submit" value="Buscar">
+								</p>
+							</form>
+						</li>
+				</ul>	
+			</div>
+				<div id="cuerpo">
+				<br> <br> <br> <br>
+				<h1 style="text-align:center">Modulos</h1>
+					<br>
+				<h2><a href="../secundarias/novato.html">Novato</a></h2>
+					<br>
+					
+					<p>En este modulo veremos lo basico de HTML, desde encabezados hasta formularios mientras resolvemos dudas tipicas
+					de aquellas personas que inician en el mundo del desarrollo web.<br> La tabla de contenido es la siguiente:</p>
+						<br>
+						<ul>
+							<li>Head-Title</li>
+							<li>Cuerpo-Documento</li>
+							<li>Tablas</li>
+							<li>Hipervinculos</li>
+							<li>Imagenes-Videos-Audio-Iframe</li>
+							<li>Formularios</li>
+							<br>
+						</ul>
+				<h2><a href="../secundarias/intermedio.html">Intermedio</a></h2>
+					 <br>
+					 <p>En este modulo pasaremos al siguiente nivel, agregando CSS a la par que aprendemos mas contenido sobre HTML.<br> La tabla de contenido es la siguiente:</p>
+					 <br>
+					<ul>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li>6</li>
+							<br>
+						</ul>
+				<h2><a href="../secundarias/avanzado.html">Avanzado</a></h2>
+					<br>
+					<p><br>La tabla de contenidos:</p>
+					<br>
+					<ul>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li>6</li>
+							<br>
+						</ul>
+						
+			<div id="formulario">
+				<p>Para inscribirte por favor rellena el siguiente formulario:</p>
+				<br>
+				<form class="form">
+					<fieldset>
+							<table>
+							<legend>Inscripcion</legend>
+								<tr>
+									<td><label>Nombre</label>
+									<input type="text"></td>
+								</tr>
+								<tr>
+									<td><label>DNI</label><br>
+									<input type="text" pattern="[0-9]}8{[A-Z]" class="foco"></td>
+								</tr>
+								<tr>
+									<td><label>Primer Apellido</label><br>
+									<input type="text"></td>
+								</tr>
+								<tr>
+									<td><label>Segundo Apellido</label>
+									<input type="text"></td>
+								</tr>
+								<tr>
+									<td><label>Numero Movil</label>
+									<input type="number"></td>
+								</tr>
+								<tr>
+									<td><label>Correo</label>
+									<input type="email"></td>
+								</tr>
+								<tr>
+								  <td><label>Tipo de sangre</label>
+								  <input type="text"></td>
+								  </tr>
+							</table>
+								<tr>
+								<td><button type="submit">Enviar</button></td>
+								</tr>
+					</fieldset>
+				</form>
+				<br>
+								
+				<form action="/my-handling-form-page" method="post">
+				 <ul>
+				  <li>
+					<label for="name">Nombre:</label>
+					<input type="text" id="name" name="user_name">
+				  </li>
+				  <li>
+					<label for="mail">Correo electrónico:</label>
+					<input type="email" id="mail" name="user_mail">
+				  </li>
+				  <li>
+					<label for="msg">Mensaje:</label>
+					<textarea id="msg" name="user_message"></textarea>
+				  </li>
+				 </ul>
+				</form>
+			</div>
+			<br>
+		</div>
+			
+		<div id="final"><br>
+		<ul>
+			<li><a href="../secundarias/pagina_web.html">Sobre pagina web</a></li>
+			<li><a href="#">Aprende HTML</a></li>
+		</ul><ul>
+			<li><a href="../secundarias/contactanos.html">Contactanos</a></li>
+			<li><a href="#">Documentacion</a></li></li>
+		</ul><ul>
+			<li><a href="../secundarias/redes.html">Redes</a></li>
+			<li><a href="../secundarias/feedback.html">Feedback</a></li>
+		</ul></ul><ul>
+			<li><a href="#">El contenido esta disponible...</a></li>
+		</ul><ul id="uno">
+			<li><a href="#">Terminos y condiciones</a></li>
+			<li><a href="#">Privacidad</a></li>
+			<li><a href="#">Cookies</a></li>
+		</ul>
+		<br>
+		
+		</div>
+	</div>
+	</body>
+</html>

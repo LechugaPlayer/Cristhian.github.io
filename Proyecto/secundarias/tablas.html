@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<title>HTML Tutorial</title>
+			<meta charset="utf-8">
+			<meta name="author" content="Cristhian Velazquez">
+			<link rel="stylesheet" href="../css/style.css" type="text/css">
+			<style type="text/css">	
+			</style>
+	</head>
+	<body>
+	<div id="cont">
+		<div id="header">
+			<ul class="nav">
+						<li>
+							<img src="..\imagenes\logo1_1.jpg" usemap="#image-map" width="120" height="60">
+								<map name="image-map">
+									<area coords="0,0,1022,469" shape="rect" href="../index.html">
+								</map>
+						</li>
+						<li><a  id="tutorial" style="cursor:pointer">Tutoriales</a>
+						<ul>
+							<li><a href="../secundarias/HTML.html">HTLM</a></li>
+							<li><a href="../secundarias/CSS.html">CSS</a></li>
+							<li><a href="../secundarias/JavaScript.html">JavaScript</a></li>
+						</ul>
+					</li>
+					<li><a href="../secundarias/Explora_Cursos.html">Explora Cursos</a>
+						<ul>
+						<li><a href="../secundarias/novato.html">Novato</a></li>
+						<li><a href="../secundarias/intermedio.html">Intermedio</a></li>
+						<li><a href="./secundarias/avanzado.html">Avanzado</a></li>
+						</ul>
+					</li>
+					<li>
+						<form action="" method="post" target="_blank">
+							<p style="color:white">Busqueda:
+								<input type="search" name="busqueda" placeholder="listas, HTML, etc" list="buscador">
+								<input type="submit" value="Buscar">
+							</p>
+						</form>
+					</li>
+			</ul>
+		</div>
+		
+		<div id="cuerpo">
+
+<h1>Tablas</h1>
+						<p>La etiqueta que encierra a la tabla es &lttable&gt&lt/table&gt. Las tablas se utilizan para mostrar informcacion tabulada y crear una distribucion de contenidos 
+						de una pagina web(textos, imagenes, etc). Dentro de la tabla debemos insertar tano las filas como las columnas con las etiquetas &gttr&lt&gt/tr&lt y &gttd&lt&gt/td&lt.
+						 Siendo tr las filas y td las columnas.</p>
+							<iframe src="../ejemplos/Tablas.html" loading="lazy"></iframe>						 
+						 <h2>Propiedades de tablas con CSS</h2>
+							<p><strong>Border: </strong>Permite decidir el grosor, color y tipo de borde.</p>
+							<p><strong>Background: </strong>Asigna una imagen de fondo para la tabla.</p>
+							<p><strong>Text-align: </strong>Alinea horizontalmente la tabla con los valores left, center y right.</p>
+							<p><strong>Vertical-align: </strong>Alinea verticalmente la tabla en pixeles o porcentajes.</p>
+							<p><strong>Padding: </strong>Aplica un espaciado en las celdas.</p>
+							<p><strong>Border-spacing: </strong>Aplica un espaciado entre celdas</p>
+							<p><strong>Frame: </strong>Define que bordes del marco seran visibles.</p>
+							<p><strong>Rules: </strong>Define que bordes de la tabla seran visibles.</p>
+							<iframe src="../ejemplos/Tablas1.html" loading="lazy"></iframe>
+						<h2>Combinacion de celdas</h2>
+							<p>Para las etiquetas &lttd&gt&lt/td&gt y &ltth&gt&lt/th&gt existen atributos especiales que permiten combinar las celdas y son:</p>
+							<p><strong>Colspan: </strong>Indica el número de columnas a las que se expande el contenido de una la celda, es decir, indica una expansión en horizontal 
+							hacia la derecha.</p>
+							<p><strong>Rowspan: </strong>Indica el número de filas por las que se expande el contenido de una la celda, esto es, una expansión en vertical hacia abajo.</p><br>
+							<img src="../imagenes/colspan.png"><br>
+							<img src="../imagenes/rowspan.png"><br>
+						<h2>Encabezado para columnas</h2>
+							<p>El atributo &ltth&gt&lt/th&gt permite que el contenido se visualice centrado y en negrite, cumpliendo la funcion de cabecera.</p>
+						<h2>Titulo de tabla</h2>
+							<p>Habitualmente se especifica un título para una tabla, de forma que indique el contenido de la misma. Para ello, en HTML está disponible el elemento &ltcaption&gt.
+							Sirve para establecer una leyenda o titulo de una tabla. La etiqueta debe colocarse inmediatemente despues de la etiqueta &lttable&gt</p>
+						<h1>Hipervinculos</h1>
+							<iframe src="../ejemplos/Hipervinculos.html" loading="lazy"></iframe>
+						
+		
+		</div>
+		
+		<div id="final"><br>
+		<ul>
+			<li><a href="../secundarias/pagina_web.html">Sobre pagina web</a></li>
+			<li><a href="#">Aprende HTML</a></li>
+		</ul><ul>
+			<li><a href="../secundarias/contactanos.html">Contactanos</a></li>
+			<li><a href="#">Documentacion</a></li></li>
+		</ul><ul>
+			<li><a href="../secundarias/redes.html">Redes</a></li>
+			<li><a href="../secundarias/feedback.html">Feedback</a></li>
+		</ul></ul><ul>
+			<li><a href="#">El contenido esta disponible...</a></li>
+		</ul><ul id="uno">
+			<li><a href="#">Terminos y condiciones</a></li>
+			<li><a href="#">Privacidad</a></li>
+			<li><a href="#">Cookies</a></li>
+		</ul>
+		<br>
+		
+		</div>
+	</div>
+	</body>
+</html>

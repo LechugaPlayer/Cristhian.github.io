@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<title>HTML Tutorial</title>
+			<meta charset="utf-8">
+			<meta name="author" content="Cristhian Velazquez">
+			<link rel="stylesheet" href="../css/style.css" type="text/css">
+			<style type="text/css">	
+			</style>
+	</head>
+	<body>
+	<div id="cont">
+		<div id="header">
+			<ul class="nav">
+						<li>
+							<img src="..\imagenes\logo1_1.jpg" usemap="#image-map" width="120" height="60">
+								<map name="image-map">
+									<area coords="0,0,1022,469" shape="rect" href="../index.html">
+								</map>
+						</li>
+						<li><a  id="tutorial" style="cursor:pointer">Tutoriales</a>
+						<ul>
+							<li><a href="../secundarias/HTML.html">HTLM</a></li>
+							<li><a href="../secundarias/CSS.html">CSS</a></li>
+							<li><a href="../secundarias/JavaScript.html">JavaScript</a></li>
+						</ul>
+					</li>
+					<li><a href="../secundarias/Explora_Cursos.html">Explora Cursos</a>
+						<ul>
+						<li><a href="../secundarias/novato.html">Novato</a></li>
+						<li><a href="../secundarias/intermedio.html">Intermedio</a></li>
+						<li><a href="./secundarias/avanzado.html">Avanzado</a></li>
+						</ul>
+					</li>
+					<li>
+						<form action="" method="post" target="_blank">
+							<p style="color:white">Busqueda:
+								<input type="search" name="busqueda" placeholder="listas, HTML, etc" list="buscador">
+								<input type="submit" value="Buscar">
+							</p>
+						</form>
+					</li>
+			</ul>
+		</div>
+		
+		<div id="cuerpo">
+					<h1>Head-title</h1><br>
+					<h1>Introduccion</h1><br>
+							<p>A lo largo del tutorial usaremos el estandar de HTML 4.01 ya que es comptaible con la gran mayoria de navegadores
+						actuales. Es importante especificar la version a usar pues se han hecho cambios a lo largo de la historia de HTML en 
+						donde muchas etiquetas han sido desaprobadas.</p><br>
+						<h2>Estructura basica de un documento</h2>
+							<p>Podras observar a continuacion que las instrucciones se encuentran encerradas entre los caracteres < y > como <code>&lthtml&gt&lt/html&gt</code>. Esto
+						ocurre con casi todas las etiquetas de html, en lineas generales inician con &ltetiqueta&gt y finaliza con &lt/etiqueta&gt. Aquellas etiquetas
+						que requieren sesr encerradas entre dos angulos son llamadas contenedoras y aquellas que no, vacias.</p><br>
+							<iframe src="../ejemplos/introduccion.html" loading="lazy"></iframe><br><br>
+							<p>La eiqueta &ltbr&gt realiza un salto de pagina y es una etiqueta vacia</p>
+							<p>Una pagina HTML tiene dos secciones muy definidas que vendrian a ser la cabecera(head) y el cuerpo(body)</p><br>
+							<p>La seccion 'head' siempre contiene informacion sobre el titulo de la pagina, el autor, etc. Esta informacion no sera visible en el navegador, 
+						salvo el titulo que se vera en la pestana.</p><br>
+							<p>En la seccion 'body' va escrito todo el contenido visible en la pagina Web</p><br>
+						<h2>Caracteres, entidades y caracteres especiales</h2><br>
+						<p>En algun momento se presentara un coflicto con el editor de texto al insertar un caracter distinto al ASCII. Para solventar este problema 
+						se pueden utilizar entidades de caracter que son interpretados por todas las plataformas: nombradas, numeradas y reservadas<br>
+							<p><strong>Nombradas:</strong> Inician con el caracter '&', la abreviatura del caracter seguido de un punto y coma.<br>
+							<strong>Numeradas:</strong> Inician con los caracteres &#, el numero de la posicion del caracter en la posicion ISO-Latin-1 seguido de un 
+						punto y coma.<br>
+							<Strong>Reservadas:</Strong> Se usan exclusivamente para caracteres usados en eiquetas pero que nosotros no los pretendemos usar dentro de 
+						ninguna de ellas</p><br>
+						<h2>Comentarios</h2><br>
+							<p>Es un texto que ignora el navegadaor web, por tanto es utilizado para documentar el codigo ya que la unica manera de verlo es a traves 
+						de codigo fuente. Por tanto, esta funcionalidad esta pensada para programadores web ya que permite documentar el codigo en caso de que otra
+						 persona quiera modificarlo en un futuro.</p><br>
+							<iframe src="../ejemplos/introduccion.html" loading="lazy"></iframe><br><br>
+						 <h2>Interpretacion de saltos de lineas y tabulaciones</h2><br>
+						 <p>El editor de texto no representa los saltos de lineas asi como las tabulaciones. La etiqueta usada para realizar un salto de linea es &ltbr&gt. </p><br>
+							<iframe src="../ejemplos/tabulaciones.html" loading="lazy"></iframe><br><br>
+					
+						<h2>Cabecera de un documento html</h2><br>
+							<p>La cabecera figura entre las etiquetas &lthead&gt y &lt/head&gt. En ella se incluiran definiciones generales como el titulo, autor,meta tags, etc.</p><br>
+						<h2>Titulo del documento</h2><br>
+							<p>Se coloca entre las etiquetas &lttitle&gt y &lt/title&gt. Nos premite definir el titulo que aparecera en la barra del navegador</p><br>
+						<br>
+						<h2>Metadatos</h2><br>
+							<p>Es una etiqueta vacia utilizada para definir el contenido de ciertas variables relacionadas con las paginas web, como el nombre del autor, la 
+							descripcion de la pagina, etc.</p>
+							<iframe src="../ejemplos/head-title.html" loading="lazy"></iframe><br><br>
+							<p><strong>Author: </strong>Indica el nombre del autor del documento</p>
+							<p><strong>Description: </strong>Description del sitio web</p>
+							<p><strong>Editor: </strong>Indica el programa usado para hacer la pagina</p>
+							<p><strong>Keysword: </strong>Palabras claves que permiten a alos buscadorees indexar su contenido</p>
+		<br>	
+	</div>
+		
+	
+		<div id="final"><br>
+		<ul>
+			<li><a href="../secundarias/pagina_web.html">Sobre pagina web</a></li>
+			<li><a href="#">Aprende HTML</a></li>
+		</ul><ul>
+			<li><a href="../secundarias/contactanos.html">Contactanos</a></li>
+			<li><a href="#">Documentacion</a></li></li>
+		</ul><ul>
+			<li><a href="../secundarias/redes.html">Redes</a></li>
+			<li><a href="../secundarias/feedback.html">Feedback</a></li>
+		</ul></ul><ul>
+			<li><a href="#">El contenido esta disponible...</a></li>
+		</ul><ul id="uno">
+			<li><a href="#">Terminos y condiciones</a></li>
+			<li><a href="#">Privacidad</a></li>
+			<li><a href="#">Cookies</a></li>
+		</ul>
+		<br>
+		</div>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<title>HTML Tutorial</title>
+			<meta charset="utf-8">
+			<meta name="author" content="Cristhian Velazquez">
+			<link rel="stylesheet" href="../css/style.css" type="text/css">
+			<style type="text/css">	
+			</style>
+	</head>
+	<body>
+	<div id="cont">
+		<div id="header">
+			<ul class="nav">
+						<li>
+							<img src="..\imagenes\logo1_1.jpg" usemap="#image-map" width="120" height="60">
+								<map name="image-map">
+									<area coords="0,0,1022,469" shape="rect" href="../index.html">
+								</map>
+						</li>
+						<li><a  id="tutorial" style="cursor:pointer">Tutoriales</a>
+						<ul>
+							<li><a href="../secundarias/HTML.html">HTLM</a></li>
+							<li><a href="../secundarias/CSS.html">CSS</a></li>
+							<li><a href="../secundarias/JavaScript.html">JavaScript</a></li>
+						</ul>
+					</li>
+					<li><a href="../secundarias/Explora_Cursos.html">Explora Cursos</a>
+						<ul>
+						<li><a href="../secundarias/novato.html">Novato</a></li>
+						<li><a href="../secundarias/intermedio.html">Intermedio</a></li>
+						<li><a href="./secundarias/avanzado.html">Avanzado</a></li>
+						</ul>
+					</li>
+					<li>
+						<form action="" method="post" target="_blank">
+							<p style="color:white">Busqueda:
+								<input type="search" name="busqueda" placeholder="listas, HTML, etc" list="buscador">
+								<input type="submit" value="Buscar">
+							</p>
+						</form>
+					</li>
+			</ul>
+		</div>
+		
+		<div id="cuerpo">
+
+<h1>Cuerpo-Documento</h1><br>
+								<p>El cuerpo esta delimitado por las etiquetas &ltbody&gt y &lt/body&gt, y entre ellas estara el contenido de nuestra pagina web.</p><br>
+							<h2>Establecer una imagen de fondo</h2><br>
+								<p>Para ello se utiliza el atributo 'background' que nos permite poner una imagen como fondo de la pagina. Asi como se puede usar imagenes de fondo 
+							tambien puedes rellenar de fondo de un color con la propiedad 'background-color'. La propiedad 'background-color' permite el uso de 2 formatos: Mediante 
+							el nombre del color y RGB.</p><br>
+							<iframe src="../ejemplos/Cuerpo-Documento.html" loading="lazy"></iframe><br><br>
+							<h2>Establecer color de texto</h2><br>
+								<p>Para establecer el color de primer plano para el texto se utiliza el atributo 'color'. Esta etiqueta acepta los dos formatos mencionados anterioremente, 
+								RGB y nombre</p>
+							<iframe src="../ejemplos/text.html" loading="lazy"></iframe>
+							<h2>Inserccion de texto</h2>
+								<p>Las etiquetas que definen los titulos de seccion son desde &lth1&gt hasta &lth6&gt en donde 'h1' es la de mayor tamano y 'h6' es la de menor tamano.
+								La etiqueta que define el parrafo es &ltp&gt y &lt/p&gt. Estas etiquetas aceptan ademas el atributo 'text-align', que permite la alineacion horizontal.</p><br>
+							<iframe src="../ejemplos/texto.html" loading="lazy"></iframe>
+						<h2>Resaltar caracteres</h2><br>
+									<p>Para enfatizar una zona del texto se pueden usar las siguientes etiquetas:</p>
+									<p><strong>Cite: </strong>Indica que el texto es una direccion postal.</p>
+									<p><strong>Address: </strong>Indica que el texto es una cita de otro texto. Generalmente se utiliza con &ltblockquote&gt.</p>
+									<p><strong>Q: </strong>Permite definir citas cortas.</p>
+									<p><strong>Blockquote: </strong>Indica que el texto es un bloque sangrándolo por los dos lados y  sangrándolo de los párrafos superiores e inferiores.</p>
+									<p><strong>Em: </strong>Indica que nos interesa enfatizar el texto.</p>
+									<p><strong>Strong: </strong>Indica un enfasis mayor al de 'em'.</p>
+									<p><strong>I: </strong>Indica que el texto dee mostrarse en cursiva</p>
+									<p><strong>U: </strong>Indica que el texto debe mostrarse subrayado</p>
+									<p><strong>Strike: </strong>Indica que el texto debe mostrarse tachado</p>
+									<p><strong>Sub: </strong>Indica que el texto debe mostrarse como un subindice</p>
+									<p><strong>Sup: </strong>Indica que el texto debe mostrarse como un superindice</p>
+									<p><strong>Mark: </strong>Indica que el texto debe mostrarse marcado y resaltado</p>
+								<br>
+							<iframe src="../ejemplos/enfasis.html" loading="lazy"></iframe><br><br>
+						<h2>Parrafos</h2>
+							<p>La etiqueta &ltp&gt&lt/p&gt es la mas utilizada ya que permite definir los parrafos que forman el texto de un pagina. Esta etiqueta tiene el atributo 'text-align'
+							 que permite alinear horizontalmente. Los valores que puede tomar son: center, left, right y justify. si se desea introducie espacios entre parrados se debe 
+							 insertar saltos de lineas mediante la etiqueta &ltbr&gt</p>
+						<br>
+						<h2>Listas</h2>
+							<p>Con la etiqueta &ltol&gt&lt/ol&gt es posible representar enumeraciones de elementos en formas de listas, dentro de estas se podra incluir cualquier elemento 
+							del lenguaje, inclsuo otra lista (lista anidada). En HTML existen tres tipos de listas: </p>
+							<p><strong>Listas no ordenadas: </strong>La lista no esta numerada. &ltul&gt&lt/ul&gt</p>
+							<p><strong>Listas ordenadas: </strong>La lista esta numerada. &ltol&gt&lt/ol&gt</p>
+							<p><strong>Listas de definicion: </strong>Un conjunto de terminos y definiciones, similar a un diccionario&ltdl&&lt/dl&gt</p>
+						<h2>Lista no ordenada</h2>
+								<p>No indica un orden o secuencia determinado. La etiqueta &ltul&gt encierra todos los elementos de la lista y la etiqueta &ltli&gt cada una de las ocurrencias
+								de la lista. </p>
+						<h2>Lista ordenada</h2>
+							<p>La etiqueta que nos permite crear esta lista es &ltul&gt. Esta lista si presenta un orden ya sea alfabetico o numero, aunque no esta relacionado con el contenido.
+							La etiqueta &ltli&gt&lt/li&gt encierra el contenido de la lista.</p>
+							<iframe src="../ejemplos/lista.html" loading="lazy"></iframe>
+						<h2>Lista de definiciones</h2>
+							<p>Se utiliza para asociar un termino y la definicion del mismo. La etiqueta &ltdl&gt&lt/dl&gt encierra a la lista, la etiqueta &ltde&gt&lt/dt&gt encierra el 
+							termino a definir y la etiqueta &ltdd&gt&lt/dd&gt encierra la descripcion del termino</p>
+							<iframe src="../ejemplos/definicion.html" loading="lazy"></iframe>
+		
+		</div>
+		
+		<div id="final"><br>
+		<ul>
+			<li><a href="../secundarias/pagina_web.html">Sobre pagina web</a></li>
+			<li><a href="#">Aprende HTML</a></li>
+		</ul><ul>
+			<li><a href="../secundarias/contactanos.html">Contactanos</a></li>
+			<li><a href="#">Documentacion</a></li></li>
+		</ul><ul>
+			<li><a href="../secundarias/redes.html">Redes</a></li>
+			<li><a href="../secundarias/feedback.html">Feedback</a></li>
+		</ul></ul><ul>
+			<li><a href="#">El contenido esta disponible...</a></li>
+		</ul><ul id="uno">
+			<li><a href="#">Terminos y condiciones</a></li>
+			<li><a href="#">Privacidad</a></li>
+			<li><a href="#">Cookies</a></li>
+		</ul>
+		<br>
+		
+		</div>
+	</div>
+	</body>
+</html>

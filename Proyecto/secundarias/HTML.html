@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<title>HTML Tutorial</title>
+			<meta charset="utf-8">
+			<meta name="author" content="Cristhian Velazquez">
+			<link rel="stylesheet" href="../css/style.css" type="text/css">				
+	</head>
+	
+	
+	<body>
+	<!--Opcionens de busqueda-->
+	<datalist id="buscador">
+			<option value="HTLM">
+			<option value="CSS">
+			<option value="JavaScript">
+			<option value="Tablas">
+			<option value="Listas">
+			<option value="Formulario">
+	</datalist>
+	<div id ="cont">
+			<div id="header">
+			<!--Menu desplegable-->
+				<ul class="nav">
+						<li>
+							<img src="../imagenes/logo1_1.jpg" usemap="#image-map" alt width="120" height="60">
+								<map name="image-map">
+									<area coords="0,0,1022,469" shape="rect" href="../index.html" alt>
+								</map>
+						</li>
+						<li><a id="tutorial" style="cursor:pointer">Tutoriales</a>
+							<ul>
+							<li><a href="../secundarias/HTML.html">HTLM</a></li>
+							<li><a href="../secundarias/CSS.html">CSS</a></li>
+							<li><a href="../secundarias/JavaScript.html">JavaScript</a></li>
+							</ul>
+						</li>
+						<li><a href="../secundarias/Explora_Cursos.html">Explora Cursos</a>
+							<ul>
+							<li><a href="../secundarias/novato.html">Novato</a></li>
+							<li><a href="../secundarias/intermedio.html">Intermedio</a></li>
+							<li><a href="../secundarias/avanzado.html">Avanzado</a></li>
+							</ul>
+						</li>
+						<!--Buscador -->
+						<li>
+							<form action="/action.php" method="post" target="_blank">
+								<p style="color:white">Busqueda:
+									<input type="search" name="busqueda" placeholder="listas, HTML, etc" list="buscador">
+									<input type="submit" value="Buscar">
+								</p>
+							</form>
+						</li>
+				</ul>	
+			</div>		
+			
+			
+			
+				<div id="cuerpo">
+					<br><br>
+					<p> HTML (Hypertext Markup Language) es un lenguaje de presentación de documentos. Haciendo
+						uso de este lenguaje, a través de una serie de etiquetas podremos definir el contenido de un documento de texto con algunos elementos multimedia.
+						Sin embargo HTML debe considerarse un lenguaje para estructurar elementos y no un lenguaje de programacion.</p><br>
+						<br>
+						<h2>Tabla de contenidos</h2>
+				<br>
+					<p>Aqui podras observar los tutoriales en orden cronologico para tener una referencia de lo que te espera en los proximos cursos. <br> O puedes acceder directamente
+					a lo que estes interesado</p>
+				<br>
+				<ul>
+					<li><h2><a href="../Proyecto/secundarias/HTML.html">HTML</a></h2><ul>
+					<br>
+						<li><a href="Head.html">Head-Title</a></li>
+						<li><a href="Cuerpo.html">Cuerpo-Documento</a></li>
+						<li><a href="tablas.html">Tablas</a></li>
+						<li><a href="hiperviculos.html">Hipervinculos</a></li>
+						<li><a href="imagenes.html">Imagenes-Videos-Audio-Iframe</a></li>
+						<li><a href="formularios.html">Formularios</a></li>
+					</ul></li>
+						
+				</div>
+				<!--Pie de pagina de la pagina web -->
+		<div id="final"><br>
+			<ul>
+				<li><a href="../secundarias/pagina_web.html">Sobre pagina web</a></li>
+				<li><a href="#">Aprende HTML</a></li>
+			</ul>
+			<ul>
+				<li><a href="../secundarias/contactanos.html">Contactanos</a></li>
+				<li><a href="#">Documentacion</a></li>
+			</ul>
+			<ul>
+				<li><a href="../secundarias/redes.html">Redes</a></li>
+				<li><a href="../secundarias/feedback.html">Feedback</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">El contenido esta disponible...</a></li>
+			</ul>
+			<ul id="uno">
+				<li><a href="#">Terminos y condiciones</a></li>
+				<li><a href="#">Privacidad</a></li>
+				<li><a href="#">Cookies</a></li>
+			</ul>
+		<br>
+		
+		</div>
+	</div>
+	</body>
+</html>
